@@ -1,0 +1,15 @@
+->importar pino(considerando a pasta root do projeto. $ deve ser ignorado)
+$sh scripts/setPin <numero do pino> <se é saida 'out' ou entrada>
+	exemplo(será setado o pino 60 da gpio como saida):
+	$sh scripts/setPin 60 out
+
+
+->Escrever no Pino
+$sh scripts/dWrite <numero pino> <valor '0' ou '1'>
+	exemplo(acender pino 62)
+	$sh scripts/dWrite 62 1
+
+->Ler pino
+$sh scripts/dRead <numero pino>
+	exemplo:
+	$sh scripts/dRead 65
